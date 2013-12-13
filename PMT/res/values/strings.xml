@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PMT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="source">Source:</string>
+    <string name="dest">Destination:</string>
+    <string name="find">Find</string>
+    <string name="update">Update</string>
+    <string name="title_activity_show_buses">ShowBuses</string>
+    <string name="result">Results</string>
+    <string name="empty"/>
+    <string name="available">Available Buses</string>
+    <color name="violet">#19D119</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <string name="hintsource">Source</string>
+    <string name="hintdest">Destination</string>
+    <string name="banner_alt">Child waiting for bus</string>
+
+</resources>

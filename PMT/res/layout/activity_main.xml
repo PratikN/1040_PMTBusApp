@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="38dp"
+        android:text="@string/dest"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/dest_text"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/hintdest"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:width="140dp" />
+
+    <EditText
+        android:id="@+id/src_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dest_text"
+        android:layout_alignTop="@+id/textView1"
+        android:ems="10"
+        android:hint="@string/hintsource"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:width="140dp" >
+
+        <requestFocus />
+    </EditText>
+
+     <ImageView
+         android:layout_width="300dp"
+         android:layout_height="200dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/find_button"
+         android:layout_marginTop="19dp"
+         android:contentDescription="@string/banner_alt"
+         android:fadingEdge="horizontal|vertical"
+         android:src="@drawable/bus_stop" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="17dp"
+         android:layout_marginTop="32dp"
+         android:text="@string/source"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="@color/white" />
+
+     <Button
+         android:id="@+id/find_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/dest_text"
+         android:layout_marginTop="17dp"
+         android:layout_toLeftOf="@+id/dest_text"
+         android:onClick="findBuses"
+         android:text="@string/find"
+         android:textColor="@color/white" />
+
+     <Button
+         android:id="@+id/update_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/find_button"
+         android:layout_alignBottom="@+id/find_button"
+         android:layout_alignLeft="@+id/dest_text"
+         android:text="@string/update"
+         android:textColor="@color/white" />
+
+</RelativeLayout>
